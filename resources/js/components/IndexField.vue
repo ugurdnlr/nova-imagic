@@ -29,13 +29,6 @@ export default {
     },
 
     computed: {
-        getFullDomainWithProtocol() {
-            const protocol = window.location.protocol;
-            const hostname = window.location.hostname;
-            const port = window.location.port ? ':' + window.location.port : '';
-
-            this.domain = `${protocol}//${hostname}${port}`;
-        },
 
         fieldValue() {
             return this.field.displayedAs || this.field.value
