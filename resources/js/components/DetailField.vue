@@ -81,14 +81,7 @@ export default {
     },
 
     computed: {
-        getFullDomainWithProtocol() {
-            const protocol = window.location.protocol;
-            const hostname = window.location.hostname;
-            const port = window.location.port ? ':' + window.location.port : '';
-
-            this.domain = `${protocol}//${hostname}${port}`;
-        },
-
+        
         hasValue() {
             return Boolean(this.field.value || this.imageUrl)
         },
