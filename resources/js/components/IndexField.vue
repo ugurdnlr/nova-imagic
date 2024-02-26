@@ -14,7 +14,7 @@ export default {
         }
     },
 
-    mounted() {
+    async mounted() {
       this.getFullDomainWithProtocol()
     },
 
